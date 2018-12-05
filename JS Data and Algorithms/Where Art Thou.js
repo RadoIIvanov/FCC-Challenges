@@ -5,7 +5,7 @@ function whatIsInAName(collection, source) {
     for (let i = 0; i < collection.length; ++i) {
         let boolean = true;
         for (let key in source) {
-            if (!(collection[i].hasOwnProperty(key) && collection[i][key] === source[key])) {
+            if (!(collection[i][key] !== undefined && collection[i][key] === source[key])) {
                 boolean = false;
                 break;
             }
