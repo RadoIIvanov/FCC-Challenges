@@ -17,6 +17,6 @@ function sumFibs(num) {
     return total;
 }
 
-console.log(sumFibs(4000000));
+console.log(sumFibs(1000));
 
 /// sum all the odd fibonnaci numbers less than num
